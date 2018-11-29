@@ -197,6 +197,9 @@ section h2 {
 .fluid-60 {
     width: 60%;
 }
+.fluid-90 {
+    width: 90%;
+}
 .rotate-left-10 {
     -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
@@ -254,7 +257,7 @@ header.masthead {
 }
 header.masthead .header-content {
   max-width: 500px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -347,7 +350,16 @@ section.features .section-heading {
 section.features .section-heading h2 {
   margin-top: 0;
 }
-
+.device-mockup>.device {
+    background-image: url(../img/iphone-x.png) !important;
+}
+.device > .screen {
+    top: 6.48% !important;
+    bottom: -4.12% !important;
+    left: 8.2% !important;
+    right: 8.4% !important;
+    z-index: -1 !important;
+}
 section.features .section-heading p {
   margin-bottom: 0;
 }
