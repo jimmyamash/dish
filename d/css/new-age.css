@@ -320,7 +320,17 @@ section.download .badges .badge-link img {
     margin-bottom: 0;
   }
 }
-
+.logo-link-alt {
+    display: none;
+}
+.navbar-shrink .logo-link,
+.navbar-light .logo-link {
+    display: none;
+}
+.navbar-shrink .logo-link-alt,
+.navbar-light .logo-link-alt {
+    display: block;
+}
 @media (min-width: 768px) {
   section.download h2 {
     font-size: 70px;
