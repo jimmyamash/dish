@@ -259,7 +259,10 @@ header.masthead .device-container .screen img {
 }
 @media (max-width: 991px) {
     h2 {
-        font-size: 24px;
+        font-size: 24px !important;
+    }
+    h3 {
+        font-size: 30px !important;
     }
 }
 @media (min-width: 992px) {
