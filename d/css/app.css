@@ -272,6 +272,9 @@ header.masthead .device-container .screen img {
   border-radius: 3px;
 }
 @media (max-width: 991px) {
+    .paper {
+        padding: 15px;
+    }
     h2 {
         font-size: 24px !important;
     }
