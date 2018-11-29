@@ -74,7 +74,11 @@ p {
 section {
   padding: 100px 0;
 }
-
+@media(max-width: 991px) {
+    section {
+        padding: 40px 0;
+    }
+}
 section h2 {
   font-size: 50px;
 }
@@ -178,7 +182,7 @@ section h2 {
     color: white;
 }
 .curved {
-    border-radius: 20px;
+    border-radius: 25px;
 }
 .fluid-70 {
     width: 70%;
@@ -193,6 +197,7 @@ section h2 {
 .paper {
     background: white;
     position: relative;
+    padding: 40px;
 }
 .circle {
     border-radius: 50%;
@@ -206,12 +211,11 @@ section h2 {
     content: "";
     background: white;
     border-radius: 20px;
-    width: calc(100% + 80px);
+    width: calc(100%);
     height: calc(100% + 80px);
     top: 0;
     left: 0;
     margin-top: -40px;
-    margin-left: -40px;
     bottom: 0;
     right: 0;
 }
@@ -324,7 +328,6 @@ section.download .badges .badge-link img {
 }
 
 section.features .section-heading {
-  margin-bottom: 100px;
 }
 
 section.features .section-heading h2 {
