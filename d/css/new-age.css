@@ -37,7 +37,7 @@ a {
 }
 
 a:hover, a:focus {
-  color: #fcbd20;
+  color: #e23622;
 }
 
 hr {
@@ -101,7 +101,7 @@ section h2 {
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-  color: #fcbd20;
+  color: #e23622;
 }
 
 #mainNav .navbar-toggler {
@@ -320,17 +320,6 @@ section.download .badges .badge-link img {
     margin-bottom: 0;
   }
 }
-.logo-link-alt {
-    display: none;
-}
-.navbar-shrink .logo-link,
-.navbar-light .logo-link {
-    display: none;
-}
-.navbar-shrink .logo-link-alt,
-.navbar-light .logo-link-alt {
-    display: block;
-}
 @media (min-width: 768px) {
   section.download h2 {
     font-size: 70px;
@@ -357,10 +346,22 @@ section.features .feature-item {
 section.features .device-container {
   margin-bottom: 100px;
 }
-
+.paper-last:before {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
 @media (min-width: 992px) {
   section.features .device-container {
     margin-bottom: 0;
+  }
+  .logo-link-alt {
+      display: none;
+  }
+  .navbar-shrink .logo-link {
+      display: none;
+  }
+  .navbar-shrink .logo-link-alt {
+      display: block;
   }
 }
 
