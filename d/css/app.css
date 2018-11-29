@@ -246,7 +246,12 @@ header.masthead {
   background: -webkit-gradient(linear, bottom, top, from(#e23622), to(#ee5a29));
   background: linear-gradient(to top, #e23622, #ee5a29);
 }
-
+@media(max-width:991px) {
+    header.masthead {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
 header.masthead .header-content {
   max-width: 500px;
   margin-bottom: 100px;
@@ -284,7 +289,7 @@ header.masthead .device-container .screen img {
 }
 @media (min-width: 992px) {
   header.masthead {
-    height: 100vh;
+    height: 84vh;
     min-height: 775px;
     padding-top: 0;
     padding-bottom: 0;
