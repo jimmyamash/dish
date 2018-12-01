@@ -359,6 +359,7 @@ section.features .section-heading h2 {
     left: 8.2% !important;
     right: 8.4% !important;
     z-index: -1 !important;
+    overflow: visible !important;
 }
 section.features .section-heading p {
   margin-bottom: 0;
