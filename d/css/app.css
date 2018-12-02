@@ -213,11 +213,11 @@ section h2 {
     border-radius: 50%;
 }
 .material {
-    box-shadow: 2px 25px 57px 3px #00000017!important;
+    box-shadow: 2px 25px 56px 3px rgba(0,0,0,.2) !important;
 }
 .paper:before {
     position: absolute;
-    box-shadow: 2px 25px 57px 3px #00000017!important;
+    box-shadow: 2px 25px 56px 3px rgba(0,0,0,.2) !important;
     content: "";
     background: white;
     border-radius: 20px;
