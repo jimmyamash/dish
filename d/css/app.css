@@ -238,6 +238,10 @@ section h2 {
     max-width: 40px;
     width: 100%;
 }
+.diana-ross {
+    position: fixed;
+    opacity: 0;
+}
 header.masthead {
   position: relative;
   width: 100%;
