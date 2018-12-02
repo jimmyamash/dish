@@ -201,7 +201,6 @@ section h2 {
     width: 90%;
 }
 .rotate-left-10 {
-    -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
 }
 .paper {
@@ -255,8 +254,18 @@ header.masthead {
         padding-bottom: 100px;
     }
 }
+h2,
+.h2 {
+    font-size: 1.8rem;
+}
+.team-photo {
+    width: 200px;
+    border-radius: 10px;
+    border: 10px solid white;
+    box-shadow: 2px 25px 56px 3px rgba(0,0,0,.2) !important;
+}
 header.masthead .header-content {
-  max-width: 500px;
+  /* max-width: 500px; */
   margin-bottom: 30px;
   text-align: center;
 }
@@ -267,6 +276,16 @@ header.masthead .header-content h1 {
 h3,
 .h3 {
     font-size: 2.5rem;
+}
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    color: white;
+    margin: auto;
+    width: 100%;
+    text-align: center;
 }
 header.masthead .device-container {
   max-width: 325px;
@@ -292,7 +311,7 @@ header.masthead .device-container .screen img {
 }
 @media (min-width: 992px) {
   header.masthead {
-    height: 80vh;
+    height: 100vh;
     min-height: 775px;
     padding-top: 0;
     padding-bottom: 0;
