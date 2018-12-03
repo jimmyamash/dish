@@ -51,7 +51,7 @@
             video.muted = true;
           }
 
-      }, 4000);
+      }, 1);
   }
   toggleMute();
 
