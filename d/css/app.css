@@ -304,6 +304,7 @@ header.masthead .device-container {
 }
 header.masthead .device-container .screen img {
   border-radius: 3px;
+  margin-top: -1px;
 }
 @media (max-width: 991px) {
     .paper {
