@@ -39,4 +39,20 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+
+  function toggleMute() {
+
+      setTimeout(function(){
+          var video=document.getElementById("derp");
+
+          if(video.muted){
+            video.muted = false;
+          } else {
+            video.muted = true;
+          }
+
+      }, 4000);
+  }
+  toggleMute();
+
 })(jQuery); // End of use strict
