@@ -446,6 +446,10 @@ header.masthead,
   background: linear-gradient(to top, #e23622, #ee5a29);
 }
 @media(max-width:991px) {
+    .mlr-0-mobile {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
     header.masthead {
         padding-top: 100px;
         padding-bottom: 100px;
@@ -589,7 +593,7 @@ section.features .feature-item {
 }
 
 section.features .device-container {
-  margin-bottom: 100px;
+
 }
 @media (min-width: 992px) {
   section.features .device-container {
