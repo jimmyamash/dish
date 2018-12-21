@@ -235,6 +235,9 @@ section {
   padding: 100px 0;
 }
 @media(max-width: 991px) {
+    .mobile-text-center {
+        text-align: center !important;
+    }
     section {
         padding: 40px 0;
     }
@@ -501,7 +504,8 @@ header.masthead .device-container .screen img {
   margin-top: -1px;
 }
 @media (max-width: 991px) {
-    .paper {
+    .paper,
+    .container-padding.container {
         padding: 15px;
     }
     h2 {
@@ -595,10 +599,11 @@ section.features .feature-item {
 section.features .device-container {
 
 }
-@media (min-width: 992px) {
-  section.features .device-container {
+section.features .device-container {
     margin-bottom: 0;
-  }
+}
+
+@media (min-width: 992px) {
   .logo-link-alt {
       display: none;
   }
