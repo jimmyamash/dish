@@ -503,6 +503,9 @@ header.masthead .device-container .screen img {
   border-radius: 3px;
   margin-top: -1px;
 }
+.super-bold {
+    font-weight: 700;
+}
 @media (max-width: 991px) {
     .paper,
     .container-padding.container {
