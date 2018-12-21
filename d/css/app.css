@@ -211,6 +211,12 @@ section h2 {
 .circle {
     border-radius: 50%;
 }
+.ml-0 {
+    margin-left: 0;
+}
+.mr-0 {
+    margin-right: 0;
+}
 .material {
     box-shadow: 2px 25px 56px 3px rgba(0,0,0,.2) !important;
 }
@@ -219,11 +225,11 @@ section h2 {
     box-shadow: 2px 25px 56px 3px rgba(0,0,0,.2) !important;
     content: "";
     background: white;
-    border-radius: 20px;
-    width: calc(100%);
+    /* border-radius: 20px; */
+    width: calc(100vw);
     height: calc(100% + 80px);
     top: 0;
-    left: 0;
+    left: calc(((100vw - 1140px) * -1) / 2);
     margin-top: -40px;
     bottom: 0;
     right: 0;
@@ -259,6 +265,10 @@ header.masthead {
     header.masthead {
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+    .paper:before {
+        width: 100%;
+        left: 0;
     }
 }
 h2,
