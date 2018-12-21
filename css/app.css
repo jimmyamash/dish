@@ -251,7 +251,8 @@ section h2 {
     opacity: 0;
     position: fixed;
 }
-header.masthead {
+header.masthead,
+.bg-gradient-masthead {
   position: relative;
   width: 100%;
   padding-top: 150px;
