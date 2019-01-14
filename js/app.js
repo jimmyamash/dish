@@ -42,16 +42,16 @@
 
   function toggleMute() {
 
-      setTimeout(function(){
-          var video=document.getElementById("derp");
-
-          if(video.muted){
-            video.muted = false;
-          } else {
-            video.muted = true;
-          }
-
-      }, 1);
+      // setTimeout(function(){
+      //     var video=document.getElementById("derp");
+      //
+      //     // if(video.muted){
+      //     //   video.muted = false;
+      //     // } else {
+      //     //   video.muted = true;
+      //     // }
+      //
+      // }, 1);
   }
   toggleMute();
 
