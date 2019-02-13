@@ -71,12 +71,16 @@
             <div class="device-container mr-0">
               <div class="device-mockup iphone6 portrait white">
                 <div class="device">
-                  <div class="screen">
+                  <i class="pointer play-button fa-red fa fa-play-circle fa-4x"></i>
+                  <div class="screen" style="overflow: hidden;">
                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="img/otium.jpg" class="material img-fluid" alt="">
-                  </div>
-                  <div class="button">
-                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                    <img src="img/otium.jpg" class="transparent material img-fluid" alt="">
+                    <video id="Cover" class="cover">
+                        <source src="video/dish-vid.mp4" type="video/mp4">
+                        <source src="video/dish-vid.ogg" type="video/ogg">
+                        <source src="video/dish-vid.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
                   </div>
                 </div>
               </div>

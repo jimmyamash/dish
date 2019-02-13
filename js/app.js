@@ -1,6 +1,25 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  $(document).ready(function(){
+      var vid = document.getElementById("Cover");
+      $(".device").click(function(){
+          if($(".cover").hasClass("to-front")) {
+              vid.pause();
+              $(".play-button").addClass("to-front");
+              $(".play-button").removeClass("to-back");
+              $(".cover").addClass("to-back");
+              $(".cover").removeClass("to-front");
+          } else {
+              $(".cover").addClass("to-front");
+              $(".cover").removeClass("to-back");
+              $(".play-button").addClass("to-back");
+              $(".play-button").removeClass("to-front");
+
+              vid.play();
+          }
+      });
+  });
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -25,6 +44,7 @@
     target: '#mainNav',
     offset: 54
   });
+
 
   // Collapse Navbar
   var navbarCollapse = function() {

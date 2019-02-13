@@ -493,8 +493,8 @@ h3,
 }
 header.masthead .device-container {
   max-width: 325px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: auto !important;
+  margin-left: auto !important;
 }
 .navbar-light .navbar-toggler {
     border: none !important;
@@ -787,4 +787,39 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 .btn-xl {
   font-size: 11px;
   padding: 15px 45px;
+}
+
+video.cover {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    left: 0;
+}
+
+.fa-red {
+    color: #ee5a29;
+}
+.fa-white {
+    color: white;
+}
+.play-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+    text-align: center;
+    z-index: 2;
+}
+.to-front {
+    z-index: 3 !important;
+}
+.to-back {
+    z-index: -1 !important;
+}
+.pointer {
+    cursor: pointer;
+}
+.play-button:before {
+    text-shadow: 2px 25px 56px rgba(0,0,0,.2) !important;
 }
