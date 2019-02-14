@@ -796,7 +796,11 @@ video.cover {
     z-index: -1;
     left: 0;
 }
-
+@media (max-width: 767px) {
+    .device-container {
+        margin: auto !important;
+    }
+}
 .fa-red {
     color: #ee5a29;
 }
