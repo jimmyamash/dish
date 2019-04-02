@@ -59,8 +59,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a href="/" class="navbar-brand js-scroll-trigger logo-link" href="#page-top"><img class="logo-image" src="img/logo.png"></a>
-        <a href="/" class="navbar-brand js-scroll-trigger logo-link-alt" href="#page-top"><img class="logo-image logo-image-alt" src="img/logo-alt.png"></a>
+        <a href="/" class="navbar-brand js-scroll-trigger logo-link" href="#page-top"><img class="logo-image logo-image-alt" src="img/logo-alt.png"><img class="logo-image" src="img/logo.png"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 
           <i class="fas fa-bars"></i>
@@ -74,7 +73,7 @@
               <a class="nav-link js-scroll-trigger" href="#story">Our Story</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-download js-scroll-trigger" href="https://itunes.apple.com/app/id1414499443">Download Dish For iOS</a>
+              <a class="nav-underline nav-link nav-download js-scroll-trigger" href="https://itunes.apple.com/app/id1414499443">Download Dish For iOS</a>
             </li>
           </ul>
         </div>
@@ -87,17 +86,20 @@
         <div class="row h-100">
           <div class="col-lg-7 my-auto">
             <div class="header-content mx-auto">
-              <h1 class="mb-4">Food's too important to rely just on memory</h1>
-              <h2 class="mb-5">Organize and share all of your favorite restaurants in one powerful and beautiful list</h2>
+              <h1 class="mb-6">Food's too important to rely just on memory</h1>
+              <p class="mb-5">Organize and share all of your favorite restaurants in one powerful and beautiful list</p>
               <!-- <h2 class="mb-5">Make better decisions about where to eat by meticulously organizing all of your new and favorite spots into one beautiful and powerful list.</h2> -->
-              <a href="https://itunes.apple.com/app/id1414499443" class="btn btn-outline btn-xl js-scroll-trigger">Download Dish for iOS</a>
+              <a href="https://itunes.apple.com/app/id1414499443" class="btn btn-outline btn-xl js-scroll-trigger btn-atf">Download Dish for iOS</a>
             </div>
           </div>
           <div class="col-lg-5 my-auto">
             <div class="device-container mr-0">
               <div class="device-mockup iphone6 portrait white">
                 <div class="device">
-                  <i class="pointer play-button fa-red fa fa-play-circle fa-4x"></i>
+                  <div class="play-button">
+                      <i style="margin: 0 5px;" class="pointer fa fa-play"></i>
+                      Watch Video
+                  </div>
                   <div class="screen" style="overflow: hidden;">
                     <img src="img/otium.jpg" class="transparent material img-fluid" alt="">
                     <video id="Cover" class="cover">
@@ -115,47 +117,31 @@
       </div>
     </header>
 
-    <section class="text-center bg-red" id="features">
-      <div class="container animate paper">
-        <div class="row">
-          <div class="col-md-12 mx-auto">
-            <h3 class="mb-5">Never ask "What was the name of that place?" again</h3>
-            <!-- <p>Our app is available on any mobile device! Download now to get started!</p> -->
+    <section class="text-center illustration-section" id="features">
+      <div class="container-fluid animate">
+        <img class="illustration" src="img/illustration.png" />
+      </div>
+      </div>
+      <div class="container container-offset animate text-left">
+          <div class="row">
+              <div class="col-md-6">
+                  <h3 class="bigger-line-height">There are endless ways to find new restaurants, but only <span class="red-underline">one way</span> to organize and share them.</h3>
+              </div>
+              <div class="col-md-6 mt-10">
+                  <p class="mt-30 pb-30">• &nbsp;Create lists of favorite restaurants<br/>
+                     • &nbsp;Organize lists with notes and tags<br />
+                     • &nbsp;View restaurants on a detailed map<br />
+                     • &nbsp;Share your lists with friends</p>
+              </div>
           </div>
-          <div class="col-md-4">
-              <h4 class="mb-5">Organize lists of your new and favorite restaurants</h4>
-              <img class="mb-5 fluid-70 circle material" src="img/tutorial1.png" />
-              <!-- <p class="padding-sm">Create curated lists of your favorite restaurants</p> -->
-          </div>
-          <div class="col-md-4">
-              <h4 class="mb-5">Manage and search your lists with notes and tags</h4>
-              <img class="mb-5 fluid-70 circle material" src="img/tutorial2.png" />
-              <!-- <p class="padding-sm">Dish meticulously helps you create a single list of your restaurants, etc etc</p> -->
-          </div>
-          <div class="col-md-4">
-              <h4 class="mb-5">View them all on a simple list or a detailed map</h4>
-              <img class="mb-5 fluid-70 circle material" src="img/tutorial3.png" />
-              <!-- <p class="padding-sm">You'll never leave "Where should we eat tonight?" unanswered, ever again</p> -->
-          </div>
-            <!-- <div class="badges">
-              <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
-              <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
-            </div> -->
-          </div>
-        </div>
       </div>
     </section>
 
-    <section class="features bg-red" id="story">
+    <section class="features bg-off-white" id="story">
       <div class="container animate">
-        <div class="section-heading text-white text-center">
+        <div class="section-heading text-center">
             <div class="row">
-                <div class="col-md-12">
-                    <h3 class="mb-5">The Dish on Dish</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-5 mb-5">
+                <div class="col-md-6 mb-5">
                     <div class="device-container ml-0 mlr-0">
                         <div class="device-mockup iphone6 portrait white">
                             <div class="device">
@@ -168,57 +154,86 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7 text-left">
-                    <p>At Dish, we have a passion for food, travel and design. Keeping these three things in mind, we set out to create a beautiful app that allows you to make better decisions about where to eat, no matter where you are.</p>
+                <div class="col-md-6 text-left">
+                    <h3>The Dish on Dish</h3>
+                    <p class="gray-text mt-40">With our passion for food, travel, and design, we set out to create a beautiful app that allows you to make better decisions about where to eat, wherever you are.</p>
                     <br />
-                    <p>Until now, all food apps were designed around the premise that they needed to tell you where to eat. Not anymore.</p>
                     <br />
-                    <p>Dish is designed for people who already have their favorite restaurants <i>and</i> sources for new places to try. For us, the challenge has always been finding a way to keep track of, organize and share our favorite places (unfortunately, relying on memory or jotting down notes just didn’t cut it).</p>
+                    <p style="font-weight: 700;">Not your average food app</p>
                     <br />
-                    <p>Dish keeps all of your favorite and new places at your fingertips whether you’re on the lookout for the crispiest mulita in LA or the stickiest carbonara in NY. Simply add your favorite places and start eating.</p>
+                    <p class="gray-text">Until now, all food apps were designed around the premise that they needed to tell you where to eat. Not anymore.</p>
                     <br />
-                    <p><i>Oh, the places you’ll go!</i></p>
+                    <p class="gray-text">Dish is designed for people who already have their favorite restaurants <span class="hnbi">and</span> sources for new places. The challenge has always been finding a way to keep track of, organize and share our favorite places (unfortunately, jotting down notes just didn’t cut it).</p>
+                    <br />
+                    <p class="gray-text">Keep all of your favorite and new places at your fingertips whether you’re on the lookout for the crispiest mulita in LA or the stickiest carbonara in NY.</p>
+                    <br />
+                    <p style="font-style: italic; font-weight: 700" class="red mt-20">Oh, the places you’ll go!</p>
                 </div>
             </div>
         </div>
       </div>
     </section>
-    <section class="text-center bg-red" id="download">
-      <div class="container animate paper paper-last">
+    <section class="text-left" id="download">
+      <div class="container animate">
         <div class="row">
-          <div class="col-md-12 mx-auto">
-              <h3 class="mb-5">Download Dish</h3>
-              <h4 class="mb-5">Your restaurant roadmap</h4>
-              <a class="badge-link" href="https://itunes.apple.com/app/id1414499443"><img src="img/app-store-badge.svg" class="material" alt=""></a>
-              <h4 class="mt-5">Available on iOS</h4>
-              <h4 class="mt-5">Coming soon for Android</h4>
+          <div class="col-md-6 mx-auto">
+              <h3 class="mb-4 mb-5-no-mobile">Download Dish</h3>
+              <h4 class="mb-7">Your restaurant roadmap</h4>
+          </div>
+          <div class="col-md-6 mx-auto">
+              <a class="badge-link" href="https://itunes.apple.com/app/id1414499443"><img src="img/app-store-badge.svg" class="" alt=""></a>
+              <div>
+                  <span class="relative t-20 gray sm-text">Available on iOS<span class="no-mobile">   •   </span><span class="block-mobile">Coming Soon on Android</span></h4>
+              </div>
+          </div>
+      </div>
+    </section>
+    <section class="text-left section-link" id="links">
+      <div class="container animate">
+        <div class="row">
+          <div class="col-md-12">
+              <img src="img/logo-app.png" class="logo-app" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 mb-100-mobile mx-auto">
+              <a href="#features">
+                  <h3>Features</h3>
+              </a>
+              <a href="#story">
+                  <h3>Our Story</h4>
+              </a>
+              <a href="https://itunes.apple.com/app/id1414499443">
+                  <h3>Download Dish for iOS</h4>
+              </a>
+          </div>
+          <div class="col-md-4 mx-auto">
+              <a href="privacy.html">
+                  <h5>Privacy</h3>
+              </a>
+              <a href="terms.html">
+                  <h5>Terms</h4>
+              </a>
+              <a href="cookies.html">
+                  <h5>Cookie Policy</h4>
+              </a>
+              <a href="mailto:hello@dishapp.io">
+                  <h5>Contact</h4>
+              </a>
+          </div>
+          <div class="t-200 mb-100 col-md-12">
+              <div class="row">
+                  <div class="col-md-4 col-lg-push-8 col-md-push-8 mx-auto">
+                      <a class="badge-link" href="https://itunes.apple.com/app/id1414499443"><img src="img/app-store-badge.svg" class="pb-100" alt=""></a>
+                  </div>
+                  <div class="col-md-8 col-lg-pull-4 col-md-pull-4 mx-auto">
+                      <h5 class="mb-100-mobile">&copy; 2018 Dish Technologies LLC, All Rights Reserved.</h5>
+                  </div>
+              </div>
           </div>
       </div>
     </section>
 
-    <footer>
-      <div class="container">
-        <p>&copy; 2018 Dish Technologies LLC, All Rights Reserved.</p>
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="privacy.html">Privacy</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="terms.html">Terms</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="cookies.html">Cookie Policy</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="mailto:hello@dishapp.io">Contact</a>
-          </li>
-
-          <!-- <li class="list-inline-item">
-            <a href="#">FAQ</a>
-          </li> -->
-        </ul>
-      </div>
-    </footer>
 
 
     <!-- Bootstrap core JavaScript -->
