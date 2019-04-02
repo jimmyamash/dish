@@ -441,6 +441,12 @@ section {
     margin-top: 10px;
 }
 @media(max-width: 991px) {
+    .btn-atf {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+        display: block;
+    }
     .navbar-nav {
         padding-top: 20px;
     }
@@ -1214,12 +1220,7 @@ video.cover {
 #mainNav {
     transition: .3s;
 }
-.btn-atf {
-    width: 100%;
-    max-width: 300px;
-    margin: auto;
-    display: block;
-}
+
 .fa-white {
     color: white;
 }
