@@ -667,6 +667,9 @@ section h2 {
     }
 }
 @media(max-width: 991px) {
+    .container-offset {
+        margin-top: -80px;
+    }
     .container {
         padding-left: 30px;
         padding-right: 30px;
