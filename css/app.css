@@ -405,7 +405,9 @@ hr.light {
     font-style: italic;
     font-weight: 600;
 }
-
+.section-link {
+    border-top: 2px solid rgba(0,0,0,.05);
+}
 h1,
 h2,
 h3,
@@ -652,6 +654,16 @@ section h2 {
         margin-top: -380px;
         bottom: 100px;
         position: relative;
+    }
+}
+@media(min-width: 1600px) {
+    .container-offset {
+        margin-top: -580px;
+    }
+}
+@media(min-width: 2200px) {
+    .container-offset {
+        margin-top: -780px;
     }
 }
 @media(max-width: 991px) {
