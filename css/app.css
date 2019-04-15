@@ -354,8 +354,23 @@ body {
     margin-left: 0%;
   }
 }
-
-.animate {
+.slider-nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+}
+.slider-nav-previous {
+    left: -40px;
+}
+.slider-nav-next {
+    right: -40px;
+}
+.animate-custom {
     opacity: 0;
     animation: 4s fadeIn cubic-bezier(.22,.68,0,1);
     animation-fill-mode: forwards;
@@ -443,6 +458,12 @@ section {
     margin-top: 10px;
 }
 @media(max-width: 991px) {
+    .slider-nav-previous {
+        left: -25px;
+    }
+    .slider-nav-next {
+        right: -25px;
+    }
     .btn-atf {
         width: 100%;
         max-width: 300px;
@@ -964,6 +985,16 @@ section.features .section-heading {
 section.features .section-heading h2 {
   margin-top: 0;
 }
+.slider-img {
+    display: block;
+    animation-duration: .3s !important;
+    opacity: 0;
+    margin-top: -1px;
+    position: absolute;
+}
+.slider-img.active {
+    opacity: 1;
+}
 .device-mockup>.device {
     background-image: url(../img/iphone-x.png) !important;
 }
@@ -973,7 +1004,7 @@ section.features .section-heading h2 {
     left: 8.2% !important;
     right: 8.4% !important;
     z-index: -1 !important;
-    overflow: visible !important;
+    overflow: hidden !important;
 }
 section.features .section-heading p {
   margin-bottom: 0;

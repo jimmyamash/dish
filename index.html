@@ -29,7 +29,6 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -39,8 +38,8 @@
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
 
-    <!-- Custom styles for this template -->
     <link href="css/app.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135700928-1"></script>
@@ -81,7 +80,7 @@
     </nav>
 
     <header class="masthead">
-      <div class="container h-100 animate">
+      <div class="container h-100 animate-custom">
         <i class="scroll-down fa-2x fa fa-angle-down"></i>
         <div class="row h-100">
           <div class="col-lg-7 my-auto">
@@ -95,7 +94,7 @@
           <div class="col-lg-5 my-auto">
             <div class="device-container mr-0">
               <div class="device-mockup iphone6 portrait white">
-                <div class="device">
+                <div class="device device-video">
                   <div class="play-button">
                       <i style="margin: 0 5px;" class="pointer fa fa-play"></i>
                       Watch Video
@@ -118,11 +117,11 @@
     </header>
 
     <section class="text-center illustration-section" id="features">
-      <div class="container-fluid animate">
+      <div class="container-fluid animate-custom">
         <img class="illustration" src="img/illustration.png" />
       </div>
       </div>
-      <div class="container container-offset animate text-left">
+      <div class="container container-offset animate-custom text-left">
           <div class="row">
               <div class="col-md-12">
                   <h3 class="bigger-line-height">Endless ways to find new restaurants</h3>
@@ -141,15 +140,20 @@
     </section>
 
     <section class="features bg-off-white" id="story">
-      <div class="container animate">
+      <div class="container animate-custom">
         <div class="section-heading text-center">
             <div class="row">
                 <div class="col-md-6 mb-5">
                     <div class="device-container ml-0 mlr-0">
                         <div class="device-mockup iphone6 portrait white">
                             <div class="device">
+                                <i class="red slider-nav slider-nav-previous fas fa-2x fa-angle-left"></i>
+                                <i class="red slider-nav slider-nav-next fas fa-2x fa-angle-right"></i>
                                 <div class="screen">
-                                    <img src="img/about.png" class="material img-fluid" alt="">
+                                    <img id="Slider1" src="img/about1.png" class="animated slider-img img-fluid active" alt="">
+                                    <img id="Slider2" src="img/about2.png" class="animated slider-img img-fluid" alt="">
+                                    <img id="Slider3" src="img/about3.png" class="animated slider-img img-fluid" alt="">
+                                    <img id="Slider4" src="img/about4.png" class="animated slider-img img-fluid" alt="">
                                 </div>
                                 <div class="button">
                                 </div>
@@ -177,7 +181,7 @@
       </div>
     </section>
     <section class="text-left" id="download">
-      <div class="container animate">
+      <div class="container animate-custom">
         <div class="row">
           <div class="col-md-6 mx-auto">
               <h3 class="mb-4 mb-5-no-mobile">Download Dish</h3>
@@ -192,7 +196,7 @@
       </div>
     </section>
     <section class="text-left section-link" id="links">
-      <div class="container animate">
+      <div class="container animate-custom">
         <div class="row">
           <div class="col-md-12">
               <img src="img/logo-app.png" class="logo-app" alt="">

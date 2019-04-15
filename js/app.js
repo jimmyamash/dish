@@ -3,7 +3,7 @@
 
   $(document).ready(function(){
       var vid = document.getElementById("Cover");
-      $(".device").click(function(){
+      $(".device-video").click(function(){
           if($(".cover").hasClass("to-front")) {
               vid.pause();
               $(".play-button").addClass("to-front");
@@ -33,6 +33,73 @@
       }
     }
   });
+
+$(".slider-nav-previous").click(function(){
+
+    $(".slider-img").removeClass("fadeInLeft fadeInRight fadeOutLeft fadeOutRight");
+
+    if ($("#Slider1").hasClass("active")) {
+
+        $("#Slider1").removeClass("active");
+        $("#Slider1").addClass("fadeOutRight");
+        $("#Slider4").addClass("active fadeInLeft");
+
+    }
+    else if ($("#Slider2").hasClass("active")) {
+
+        $("#Slider2").removeClass("active");
+        $("#Slider2").addClass("fadeOutRight");
+        $("#Slider1").addClass("active fadeInLeft");
+
+    }
+    else if ($("#Slider3").hasClass("active")) {
+
+        $("#Slider3").removeClass("active");
+        $("#Slider3").addClass("fadeOutRight");
+        $("#Slider2").addClass("active fadeInLeft");
+
+    }
+    else {
+
+        $("#Slider4").removeClass("active");
+        $("#Slider4").addClass("fadeOutRight");
+        $("#Slider3").addClass("active fadeInLeft");
+
+    }
+});
+$(".slider-nav-next").click(function(){
+
+    $(".slider-img").removeClass("fadeInLeft fadeInRight fadeOutLeft fadeOutRight");
+
+    if ($("#Slider1").hasClass("active")) {
+
+        $("#Slider1").removeClass("active");
+        $("#Slider1").addClass("fadeOutLeft");
+        $("#Slider2").addClass("active fadeInRight");
+
+    }
+    else if ($("#Slider2").hasClass("active")) {
+
+        $("#Slider2").removeClass("active");
+        $("#Slider2").addClass("fadeOutLeft");
+        $("#Slider3").addClass("active fadeInRight");
+
+    }
+    else if ($("#Slider3").hasClass("active")) {
+
+        $("#Slider3").removeClass("active");
+        $("#Slider3").addClass("fadeOutLeft");
+        $("#Slider4").addClass("active fadeInRight");
+
+    }
+    else {
+
+        $("#Slider4").removeClass("active");
+        $("#Slider4").addClass("fadeOutLeft");
+        $("#Slider1").addClass("active fadeInRight");
+
+    }
+});
 
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
