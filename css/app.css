@@ -459,10 +459,10 @@ section {
 }
 @media(max-width: 991px) {
     .slider-nav-previous {
-        left: -25px;
+        left: -30px;
     }
     .slider-nav-next {
-        right: -25px;
+        right: -30px;
     }
     .btn-atf {
         width: 100%;
