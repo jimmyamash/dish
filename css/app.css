@@ -390,9 +390,7 @@ body {
 body {
     font-family: 'HelveticaNeue';
 }
-#mainNav {
-    transition: .3s;
-}
+
 a {
   color: #e23622;
   -webkit-transition: .35s;
