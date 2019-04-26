@@ -393,8 +393,8 @@ body {
 
 a {
   color: #e23622;
-  -webkit-transition: all .35s;
-  transition: all .35s;
+  -webkit-transition: .35s;
+  transition: .35s;
 }
 
 a:hover, a:focus {
@@ -514,8 +514,6 @@ section h2 {
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
   background-color: white;
-  -webkit-transition: all .35s;
-  transition: all .35s;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
@@ -1263,9 +1261,6 @@ video.cover {
 }
 .fa-red {
     color: #ee5a29;
-}
-#mainNav {
-    transition: .3s;
 }
 
 .fa-white {
