@@ -1234,6 +1234,9 @@ input[type="email"] {
 .hide {
     display: none !important;
 }
+.btn-android.btn-android-alt {
+    display: block !important;
+}
 input,
 input:focus,
 input:active,
