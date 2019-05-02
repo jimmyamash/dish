@@ -5,11 +5,11 @@
 
       $(".close-overlay").click(function(){
           $(".overlay-full").removeClass("active android-success");
-          window.location = window.location.replace('/#.*$/','');
       });
 
       if(window.location.href.indexOf("#android-success") > -1) {
           $(".overlay-full").addClass("active android-success");
+          window.history.replaceState(null, null, window.location.pathname);
       }
 
       var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
