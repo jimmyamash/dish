@@ -1247,17 +1247,22 @@ button:active {
 }
 button.btn-submit:focus,
 button.btn-submit:active {
-    animation: 3s flashbtn ease-in-out infinite;
+    animation: 2s flashbtn ease-in-out infinite;
 }
 @keyframes flashbtn {
     0% {
+        border: 1px solid rgba(225,67,0,1);
+        color: #fff;
         background: rgba(225,67,0,1);
     }
     50% {
-        background: rgba(225,67,0,.3);
+        border: 1px solid rgba(225,67,0,.2);
+        background: rgba(225,67,0,.2);
     }
     100% {
         background: rgba(225,67,0,1);
+        border: 1px solid rgba(225,67,0,1);
+        color: #fff;
     }
 }
 .btn-no-shadow {
