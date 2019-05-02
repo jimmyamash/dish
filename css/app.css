@@ -1245,6 +1245,21 @@ button:focus,
 button:active {
     outline: 0 !important;
 }
+button.btn-submit:focus,
+button.btn-submit:active {
+    animation: 3s flash ease-in-out infinite;
+}
+@keyframes flash {
+    0% {
+        background: rgba(225,67,0,1);
+    }
+    50% {
+        background: rgba(225,67,0,.3);
+    }
+    100% {
+        background: rgba(225,67,0,1);
+    }
+}
 .btn-no-shadow {
     box-shadow: none !important;
 }

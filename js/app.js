@@ -5,6 +5,7 @@
 
       $(".close-overlay").click(function(){
           $(".overlay-full").removeClass("active android-success");
+          window.location = window.location.replace('/#.*$/','');
       });
 
       if(window.location.href.indexOf("#android-success") > -1) {
