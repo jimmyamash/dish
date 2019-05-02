@@ -1247,9 +1247,9 @@ button:active {
 }
 button.btn-submit:focus,
 button.btn-submit:active {
-    animation: 3s flash ease-in-out infinite;
+    animation: 3s flashbtn ease-in-out infinite;
 }
-@keyframes flash {
+@keyframes flashbtn {
     0% {
         background: rgba(225,67,0,1);
     }
