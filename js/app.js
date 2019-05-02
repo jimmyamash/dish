@@ -2,6 +2,26 @@
   "use strict"; // Start of use strict
 
   $(document).ready(function(){
+
+      $(".close-overlay").click(function(){
+          $(".overlay-full").removeClass("active android-success");
+      });
+
+      if(window.location.href.indexOf("#android-success") > -1) {
+          $(".overlay-full").addClass("active android-success");
+      }
+
+      var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+      if (iOS) {
+          $(".btn-android").addClass("hide");
+      }
+      else {
+          $(".btn-android").removeClass("hide");
+      }
+      $(".btn-android").click(function(){
+          $(".overlay-full").addClass("active");
+      });
+
       var vid = document.getElementById("Cover");
       $(".device-video").click(function(){
           if($(".cover").hasClass("to-front")) {
