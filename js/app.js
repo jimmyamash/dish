@@ -3,6 +3,10 @@
 
   $(document).ready(function(){
 
+      $('form#Android').submit(function(){
+          $(this).find('button').prop('disabled', true);
+      });
+
       $(".close-overlay").click(function(){
           $(".overlay-full").removeClass("active android-success");
       });
