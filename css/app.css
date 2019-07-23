@@ -374,6 +374,7 @@ body {
     opacity: 0;
     animation: 4s fadeIn cubic-bezier(.22,.68,0,1);
     animation-fill-mode: forwards;
+    animation-delay: 1s;
 }
 @keyframes fadeIn {
     from {
