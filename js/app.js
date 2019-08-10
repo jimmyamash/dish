@@ -18,28 +18,29 @@
 
       // commenting out the conditional code
 
-      var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-      if (iOS) {
-          $(".btn-device-android").addClass("hide");
-          $(".btn-device-ios").removeClass("hide");
-      }
-      else {
-          $(".btn-device-android").removeClass("hide");
-          $(".btn-device-ios").addClass("hide");
-      }
-
       function isMobileDevice() {
           return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
       };
 
-      if (isMobileDevice() == false) {
-          $(".btn-device-android").removeClass('hide');
-          $(".btn-device-ios").removeClass('hide');
+      if (isMobileDevice() == true) {
+
+          var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+          if (iOS) {
+              $(".btn-device-android").addClass("hide");
+              $(".btn-ios").removeClass("hide");
+              console.log('ios');
+          }
+          else {
+              $(".btn-device-android").removeClass("hide");
+              $(".btn-ios").addClass("hide");
+              console.log('android');
+          }
+
       }
 
-      $(".btn-android").click(function(){
-          $(".overlay-full").addClass("active");
-      });
+      // $(".btn-android").click(function(){
+      //     $(".overlay-full").addClass("active");
+      // });
 
       var vid = document.getElementById("Cover");
       $(".device-video").click(function(){
