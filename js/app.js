@@ -60,7 +60,7 @@
       });
       // Collapse Navbar
       var navbarCollapse = function() {
-        if ($("#mainNav").offset().top > 80) {
+        if ($("#mainNav").offset().top > 30) {
           $("#mainNav").addClass("navbar-shrink");
         } else {
           $("#mainNav").removeClass("navbar-shrink");
