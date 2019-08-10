@@ -16,13 +16,27 @@
           window.history.replaceState(null, null, window.location.pathname);
       }
 
+      // commenting out the conditional code
+
       var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
       if (iOS) {
-          $(".btn-android").addClass("hide");
+          $(".btn-device-android").addClass("hide");
+          $(".btn-device-ios").removeClass("hide");
       }
       else {
-          $(".btn-android").removeClass("hide");
+          $(".btn-device-android").removeClass("hide");
+          $(".btn-device-ios").addClass("hide");
       }
+
+      function isMobileDevice() {
+          return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+      };
+
+      if (isMobileDevice() == false) {
+          $(".btn-device-android").removeClass('hide');
+          $(".btn-device-ios").removeClass('hide');
+      }
+
       $(".btn-android").click(function(){
           $(".overlay-full").addClass("active");
       });
@@ -148,24 +162,5 @@ $(".slider-nav-next").click(function(){
     target: '#mainNav',
     offset: 54
   });
-
-
-
-
-
-  function toggleMute() {
-
-      // setTimeout(function(){
-      //     var video=document.getElementById("derp");
-      //
-      //     // if(video.muted){
-      //     //   video.muted = false;
-      //     // } else {
-      //     //   video.muted = true;
-      //     // }
-      //
-      // }, 1);
-  }
-  toggleMute();
 
 })(jQuery); // End of use strict
