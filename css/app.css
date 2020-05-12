@@ -1440,6 +1440,9 @@ video.cover {
 .play-button:before {
     text-shadow: 2px 25px 56px rgba(0,0,0,.2) !important;
 }
+.social-margin {
+    margin: 10px 5px 20px 5px;
+}
 @media(min-width: 992px) and (max-width: 1199px) {
     .play-button {
         padding: 10px 10px;
