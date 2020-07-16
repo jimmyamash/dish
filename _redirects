@@ -2,3 +2,4 @@
 https://boring-minsky-e34159.netlify.com/* https://dishapp.io/:splat 301!
 /kapow             https://share.dishapp.io/ngYsuQwIWDC2zdkW4JgY
 /download          https://dishapp.io
+/invite/*        /invite.html     200
