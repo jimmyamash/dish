@@ -114,7 +114,7 @@
         <div class="row h-100">
             <div class="col-lg-8 my-auto">
                 <div class="animate-custom header-content mx-auto">
-                  <h1 class="mb-6"> invited you to join Dish!</h1>
+                  <h1 class="mb-6"></h1>
                   <p class="mb-5">Enter your email to accept their referral and get started.</p>
                   <form id="Referral" accept-charset="UTF-8" action="" method="POST">
                     <input class="width100 m-left" type="email" name="email" placeholder="mijo@example.com" value="">
@@ -176,8 +176,8 @@
                 growsurf.getParticipantById(referrerId).then(participant => {
                     if (participant) {
                         const { firstName, lastName } = participant;
-                        const newHeader = `${firstName && lastName ? firstName + ' ' + lastName.charAt(0) + '. invited you to pet puppies on-demand' : 'Pet puppies on-demand'}`;
-                        const headerEl = document.getElementById('header');
+                        const newHeader = `${firstName && lastName ? firstName + ' ' + lastName.charAt(0) + '. invited you to join Dish!' : "You're invited to join Dish!"}`;
+                        const headerEl = document.getElementById('h1');
                         headerEl.innerHTML = newHeader;
                     }
                 });
