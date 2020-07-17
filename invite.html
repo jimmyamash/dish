@@ -178,7 +178,9 @@
                         const { firstName, lastName } = participant;
                         const newHeader = `${firstName && lastName ? firstName + ' ' + lastName.charAt(0) + '. invited you to join Dish!' : "You're invited to join Dish!"}`;
                         const headerEl = document.getElementById('ReferrerMessage');
+                        const titleText = document.getElementsByTagName("title");
                         headerEl.innerHTML = newHeader;
+                        titleText.innerHTML = newHeader;
                     }
                 });
             }
