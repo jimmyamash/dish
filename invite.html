@@ -171,7 +171,7 @@
     <script>
         window.addEventListener('grsfReady', () => {
             const referrerId = growsurf.getReferrerId();	
-            console.log("growsurf ID" + referrerId);
+            console.log("growsurf ID " + referrerId);
             if (referrerId) {
                 growsurf.getParticipantById(referrerId).then(participant => {
                     if (participant) {
