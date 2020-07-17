@@ -115,11 +115,19 @@
             <div class="col-lg-8 my-auto">
                 <div class="animate-custom header-content mx-auto">
                   <h1 class="mb-6"> invited you to join Dish!</h1>
-                  <p class="mb-5">Enter your email to accept their referral and we'll send you a link to get started.</p>
-                  <!-- <h2 class="mb-5">Make better decisions about where to eat by meticulously organizing all of your new and favorite spots into one beautiful and powerful list.</h2> -->
-                  <a href="https://itunes.apple.com/app/id1414499443" class="btn btn-ios btn-margin btn-outline btn-xl js-scroll-trigger btn-atf btn-download-atf">Download for iOS</a>
-                  <a href="https://play.google.com/store/apps/details?id=com.dishapp.dish" class="btn btn-device-android btn-margin btn-outline btn-xl js-scroll-trigger btn-atf btn-download-atf">Download for Android</a>
-                </div>
+                  <p class="mb-5">Enter your email to accept their referral and get started.</p>
+                  <form id="Referral" accept-charset="UTF-8" action="" method="POST">
+                    <input class="width100 m-left" type="email" name="email" placeholder="mijo@example.com" value="">
+                    <input class="width100 m-left" hidden type="text" name="invite" placeholder="" value="">
+                    <button id="" class="m-left invite-btn btn-no-shadow btn-submit btn-android-alt width100 btn-margin btn btn-invert btn-device-android btn-outline btn-xl js-scroll-trigger">Submit</button>
+                  </form>
+                  <div class="download-wrap hide">
+                    <p class="mb-5">You're ready!</p>
+                    <p>Get the app today, available on iOS and Android</p>
+                    <a href="https://itunes.apple.com/app/id1414499443" class="btn btn-ios btn-margin btn-outline btn-xl js-scroll-trigger btn-atf btn-download-atf">Download for iOS</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.dishapp.dish" class="btn btn-device-android btn-margin btn-outline btn-xl js-scroll-trigger btn-atf btn-download-atf">Download for Android</a>  
+                  </div>
+            </div>
               </div>
               <div class="col-lg-4 my-auto">
                 <div class="device-container animate-custom mr-0">
@@ -157,7 +165,23 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/app.js"></script>
+    <!-- <script src="js/invite.js"></script> -->
 
   </body>
-
+    <script>
+        window.addEventListener('grsfReady', () => {
+            const referrerId = growsurf.getReferrerId();	
+            console.log("growsurf ID" + referrerId);
+            if (referrerId) {
+                growsurf.getParticipantById(referrerId).then(participant => {
+                    if (participant) {
+                        const { firstName, lastName } = participant;
+                        const newHeader = `${firstName && lastName ? firstName + ' ' + lastName.charAt(0) + '. invited you to pet puppies on-demand' : 'Pet puppies on-demand'}`;
+                        const headerEl = document.getElementById('header');
+                        headerEl.innerHTML = newHeader;
+                    }
+                });
+            }
+        });
+    </script>
 </html>

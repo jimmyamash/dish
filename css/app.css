@@ -1354,6 +1354,14 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   border-color: white;
   background-color: white;
 }
+.invite-btn {
+    background: transparent !important;
+    border-color: white !important;
+    color: white !important;
+}
+.m-left {
+    margin-left: 0 !important;
+}
 
 .btn {
   border-radius: 300px;
